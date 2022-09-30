@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Live Data Visualization</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">MOHAMAD SOFTWARE ENGINEER</a>
+		</header>
+
+		<!-- Nav -->
+
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article id="wrapper" class="post featured">
+				<header class="major">
+					<span class="date">April 3, 2022</span>
+					<h2><a href="#">Live Data Visualization</a></h2>
+					<p>Reading live data on Finland's energy production and
+						consumption from Fingrid's open data database and visualization it
+						using D3.js JavaScript library. The data is updated every 3 minutes.
+					</p>
+					<ol>
+						<li>1.Chose the Start/End time.</li>
+						<li>2.chose one of the choices ( Electricity Production / consumption / wind production )</li>
+						<li>3.Press GET DATA button</li>
+					</ol>
+					<a href="url">link text</a>
+				</header>
+				<!-- <a href="#" class="image main"><img src="images/IMG-20211006-WA0018.jpg" alt="" /></a> -->
+				<div id="chart-wrapper">
+					<div id="wrapper1">
+						<label class="rad-text" class="label1">
+							Start time:
+							<input type="date" id="start_time" class="start_time">
+						</label>
+
+						<label class="rad-text" class="label1">
+							End time:
+							<input type="date" id="end-time" class="end-time"><br>
+						</label>
+
+						<label class="rad-label">
+							<input type="radio" id="production" class="rad-input" name="rad">
+							<div class="rad-design"></div>
+							<div class="rad-text">Electricity production in Finland / Gigawatt</div>
+						</label>
+						<label class="rad-label">
+							<input type="radio" id="consumption" class="rad-input" name="rad">
+							<div class="rad-design"></div>
+							<div class="rad-text">Electricity consumption in Finland / Gigawatt</div>
+						</label>
+						<label class="rad-label">
+							<input href="javascript:void(0)" type="radio" id="wind" class="rad-input" name="rad">
+							<div class="rad-design"></div>
+							<div class="rad-text">Wind power production / Gigawatt </div>
+						</label>
+						<p>
+							<a href="javascript:void(0)" id="button" class="button large" onclick="drawChart()">Get Data</a>
+						</p>
+
+
+					</div>
+
+					<div id="wrapper2" class="svg-container">
+
+					</div>
+
+				</div>
+				<div>
+					<p id="p">
+						Fingrid Oyj is the enterprise which takes care of the functioning of the nation-wide high-voltage grid,
+						the backbone of electricity transmission in Finland.
+						Fingrid produces large amount of data on the electricity market and the power system
+						and publishes it as open data for public use.
+					</p>
+				</div>
+				<ul class="actions special">
+					<li><a href="../../MohamadNachawati.github.io/index.html" class="button large">Back</a></li>
+				</ul>
+			</article>
+
+			<!-- Posts -->
+			<!-- <section class="posts">
+
+
+			</section> -->
+
+		</div>
+
+		<!-- Footer -->
+
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; NACHAWATI</li>
+				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="Script/d3.v6.js"></script>
+	<script src="js/script3.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>
